@@ -11,15 +11,7 @@ import SwiftUI
 struct AppEntry: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear() {
-                    Task {
-                        let sample = GenerationInput(prompt: "Man in in a rowboat in a storm similar to work by van Gogh")
-                        if let data = sample.encodedData {
-                            try await APIService().fetchImages(with: data)
-                        }
-                    }
-                }
+            DALLEImagesView()
         }
     }
 }
