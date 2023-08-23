@@ -20,6 +20,9 @@ struct DALLEImagesView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 80, height: 80)
+                                    .onTapGesture {
+                                        vm.selectedImage = uiImage
+                                    }
                             } else {
                                 ProgressView()
                                     .frame(width: 80, height: 80)
@@ -28,12 +31,21 @@ struct DALLEImagesView: View {
                     }
                 }
                 if !vm.fetching {
+                    if !vm.urls.isEmpty {
+                        Text("Select an Image")
+                    }
+                    if let selectedImage = vm.selectedImage {
+                        Image(uiImage: selectedImage)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 256, height: 256)
+                    }
                     if vm.urls.isEmpty {
                         Text("Be as desciptive as you can with your prompt")
                         TextField("Image Description", text: $vm.prompt, axis: .vertical)
                             .textFieldStyle(.roundedBorder)
                             .padding(.horizontal)
-                        Button("Fetch") {
+                        Button("Generate") {
                             vm.fetchImages()
                         }
                         .disabled(vm.prompt.isEmpty)

@@ -94,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				27637C352A94542B0037B273 /* Models.swift */,
-				27DF89B02A94DF9500F6A61D /* ViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				27637C252A944E480037B273 /* DALLEImagesView.swift */,
+				27DF89B02A94DF9500F6A61D /* ViewModel.swift */,
 			);
 			path = "DALLE Images";
 			sourceTree = "<group>";
