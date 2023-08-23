@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272CAF1A2A9664CD009367BC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CAF192A9664CD009367BC /* Styles.swift */; };
 		27637C242A944E480037B273 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27637C232A944E480037B273 /* AppEntry.swift */; };
 		27637C262A944E480037B273 /* DALLEImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27637C252A944E480037B273 /* DALLEImagesView.swift */; };
 		27637C282A944E4B0037B273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27637C272A944E4B0037B273 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272CAF192A9664CD009367BC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		27637C202A944E480037B273 /* DALL-E 2 Art Generator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DALL-E 2 Art Generator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27637C232A944E480037B273 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		27637C252A944E480037B273 /* DALLEImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEImagesView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				27637C352A94542B0037B273 /* Models.swift */,
+				272CAF192A9664CD009367BC /* Styles.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				27DF89B12A94DF9600F6A61D /* ViewModel.swift in Sources */,
 				27637C362A94542B0037B273 /* Models.swift in Sources */,
 				27637C262A944E480037B273 /* DALLEImagesView.swift in Sources */,
+				272CAF1A2A9664CD009367BC /* Styles.swift in Sources */,
 				27637C382A9454F20037B273 /* APIService.swift in Sources */,
 				27637C242A944E480037B273 /* AppEntry.swift in Sources */,
 			);
