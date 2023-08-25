@@ -79,13 +79,20 @@ struct DALLEImagesView: View {
                                 }
                                 Spacer()
                             }
-                            
                         }
                     } else {
                         Text(vm.desciption)
                             .padding()
-                        Button("Try another") {
-                            vm.reset()
+                        HStack {
+                            if vm.selectedImage != nil {
+                                Button("Get Variations") {
+                                    vm.fetchVariations()
+                                }
+                                
+                            }
+                            Button("Try another") {
+                                vm.reset()
+                            }
                         }
                         .buttonStyle(.borderedProminent)
                     }
